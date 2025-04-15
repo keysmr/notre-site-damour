@@ -1,0 +1,84 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #fff0f5;
+    color: #5a2a2a;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #c94f7c;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+.timeline-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.timeline {
+    display: inline-flex;
+    gap: 10px;
+}
+.event {
+    background: #ffe0eb;
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 180px;
+    display: inline-block;
+    font-size: 0.95em;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.sub {
+    font-size: 1.4em;
+    margin-top: 40px;
+    font-family: 'Pacifico', cursive;
+    color: #c94f7c;
+}
+.stars .star {
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #ffc107;
+}
+.stars {
+    margin: 20px 0;
+}
+#message {
+    font-size: 1.3em;
+    font-family: 'Pacifico', cursive;
+    color: #6b1f40;
+    margin-bottom: 20px;
+}
+#voirMot {
+    background-color: #fbb6ce;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+}
+#mot {
+    margin-top: 15px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #d43f7e;
+    font-family: 'Pacifico', cursive;
+}
+.hidden {
+    display: none;
+}
+.timeline-photo {
+    width: 200px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-top: 10px;
+  }
+  

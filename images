@@ -1,0 +1,22 @@
+from PIL import Image, ImageDraw, ImageFont
+import os
+
+# Créer un dossier pour stocker les images simulées
+output_dir = "/mnt/data/timeline_photos"
+os.makedirs(output_dir, exist_ok=True)
+
+# Générer 21 images placeholder
+for i in range(1, 22):
+    img = Image.new('RGB', (300, 200), color=(255, 228, 225))  # Rose pastel
+    d = ImageDraw.Draw(img)
+    text = f"Photo {i}"
+    font = ImageFont.load_default()
+    text_width, text_height = d.textsize(text, font=font)
+    d.text(
+        ((300 - text_width) / 2, (200 - text_height) / 2),
+        text, fill=(0, 0, 0), font=font
+    )
+    img_path = os.path.join(output_dir, f"photo{i}.jpg")
+    img.save(img_path)
+
+output_dir
